@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class TryoutUKL5 {
+
+    public static void main(String[] args) {
+        Scanner masukan = new Scanner(System.in);
+        int jumlahsiswa;
+        System.out.println("Masukan jumlah siswa =");
+        jumlahsiswa = masukan.nextInt();
+        
+        
+        double[] nilaisiswa = new double [jumlahsiswa];
+        double total = 0;
+       for (int n = 0; n < jumlahsiswa; n++){
+           System.out.println("Masukan nilai siswa ke " + (n + 1) +"=");
+         nilaisiswa [n] = masukan.nextDouble();
+       total += nilaisiswa[n];
+       
+       }
+       double ratarata;
+       ratarata = total / jumlahsiswa;
+        System.out.println("Jadi nilai rata rata siswa adalah ="+ratarata);
+      
+        
+    }
+}
